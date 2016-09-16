@@ -10,7 +10,7 @@ module.exports = function (app) {
 			if (results.length > 0) {
 				console.log(results);
 				needle.post(`${results[0]}/v1/cores`, req.body, function (err, res) {
-					if (ress) {
+					if (res) {
 						console.log(res.body);
 					}
 				});
